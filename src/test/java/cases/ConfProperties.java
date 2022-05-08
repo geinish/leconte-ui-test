@@ -1,3 +1,5 @@
+package cases;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -26,5 +28,3 @@ public class ConfProperties {
      */
     public static String getProperty(String key) {
         return PROPERTIES.getProperty(key); } }
-
-
