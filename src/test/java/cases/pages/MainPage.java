@@ -1,4 +1,4 @@
-package pages;
+package cases.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,9 +10,6 @@ public class MainPage {
      * constructor
      */
     public WebDriver driver;
-    public MainPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver; }
     /**
      * Navigation locators
      */
@@ -25,7 +22,6 @@ public class MainPage {
     //form
     @FindBy(xpath = "//*[@id=\"navbar\"]/div/nav/a[3]") //TODO name and text location
     private WebElement navigationForm;
-
     /**
      * Form send message locators
      */
@@ -45,16 +41,25 @@ public class MainPage {
     @FindBy(xpath = "//*[@id=\"wf-form-Contact-form\"]/div[2]/input")
     private WebElement buttonSend;
 
+    public MainPage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
+        this.driver = driver;
+    }
 
     /**
      * metods navigation
      */
     public void navigationSluzbyClick() {
-        navigationSluzby.click(); }
+        navigationSluzby.click();
+    }
+
     public void navigationSpolupraceClick() {
-        navigationSpoluprace.click(); }
+        navigationSpoluprace.click();
+    }
+
     public void navigationFormClick() {
-        navigationForm.click(); }
+        navigationForm.click();
+    }
 
     /**
      * metods send message

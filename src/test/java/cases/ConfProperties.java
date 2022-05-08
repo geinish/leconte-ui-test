@@ -8,6 +8,7 @@ public class ConfProperties {
 
     protected static FileInputStream fileInputStream;
     protected static Properties PROPERTIES;
+
     static {
         try {
             //file conf path
@@ -22,9 +23,15 @@ public class ConfProperties {
                 try {
                     fileInputStream.close();
                 } catch (IOException e) {
-                    e.printStackTrace(); } } }
+                    e.printStackTrace();
+                }
+        }
+    }
+
     /**
      * getting value properties
      */
     public static String getProperty(String key) {
-        return PROPERTIES.getProperty(key); } }
+        return PROPERTIES.getProperty(key);
+    }
+}
