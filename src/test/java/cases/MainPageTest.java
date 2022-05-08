@@ -6,7 +6,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.util.concurrent.TimeUnit;
 
 
@@ -26,7 +25,7 @@ public class MainPageTest {
     }
 
     @AfterClass
-    public static void tearDown() {
+    public static void quit() {
         driver.quit();
     }
 
