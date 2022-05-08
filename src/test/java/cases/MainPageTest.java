@@ -31,10 +31,25 @@ public class MainPageTest {
     }
 
     @Test
-    public void navigationTest() {
+    public void shouldBeSpolupraceNavigation() {
         mainPage.navigationSpolupraceClick();
-        Assert.assertEquals("1", "1");
+        Assert.assertEquals("NÁBOR PRACOVNÍKŮ NEBYL NIKDY SNAZŠÍ", mainPage.getSectionSpolupraceText());
+        Assert.assertEquals("https://www.leconte.cz/#spoluprace", mainPage.driver.getCurrentUrl());
+
     }
 
+    @Test
+    public void shouldBeSFormNavigation() {
+        mainPage.navigationFormClick();
+        Assert.assertEquals("KONTAKTUJTE NÁS", mainPage.getSectionFormText());
+        Assert.assertEquals("https://www.leconte.cz/#form", mainPage.driver.getCurrentUrl());
+    }
+
+    @Test
+    public void shouldBeSSluzbyNavigation() {
+        mainPage.navigationSluzbyClick();
+        Assert.assertEquals("NAŠE SLUŽBY", mainPage.getSectionSluzbyText());
+        Assert.assertEquals("https://www.leconte.cz/#sluzby", mainPage.driver.getCurrentUrl());
+    }
 }
 

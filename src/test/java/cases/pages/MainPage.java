@@ -27,6 +27,20 @@ public class MainPage {
     //form
     @FindBy(xpath = "//*[@id=\"navbar\"]/div/nav/a[3]") //TODO name and text location
     private WebElement navigationForm;
+
+    /**
+     * sections locators
+     */
+    //sluzby
+    @FindBy(xpath = "//*[@id=\"sluzby\"]/div[1]/h2[1]")
+    private WebElement sectionSluzby;
+    //spoluprace
+    @FindBy(xpath = "//*[@id=\"spoluprace\"]/div[1]/h2[1]/strong")
+    private WebElement sectionSpoluprace;
+    //form
+    @FindBy(xpath = "//*[@id=\"form\"]/div[1]/h2/strong")
+    private WebElement sectionForm;
+
     /**
      * Form send message locators
      */
@@ -59,6 +73,22 @@ public class MainPage {
 
     public void navigationFormClick() {
         navigationForm.click();
+    }
+
+    /**
+     * find Navigation
+     * @return
+     */
+    public String getSectionSluzbyText() {
+        return sectionSluzby.getText();
+    }
+
+    public String getSectionSpolupraceText() {
+        return sectionSpoluprace.getText();
+    }
+
+    public String getSectionFormText() {
+        return sectionForm.getText();
     }
 
     /**
