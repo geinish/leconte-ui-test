@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
-public class MainPageTest {
+public class MainPageNavigationTest {
     public static cases.pages.MainPage mainPage;
     public static WebDriver driver;
 
@@ -35,7 +35,6 @@ public class MainPageTest {
         mainPage.navigationSpolupraceClick();
         Assert.assertEquals("NÁBOR PRACOVNÍKŮ NEBYL NIKDY SNAZŠÍ", mainPage.getSectionSpolupraceText());
         Assert.assertEquals("https://www.leconte.cz/#spoluprace", mainPage.driver.getCurrentUrl());
-
     }
 
     @Test
@@ -52,4 +51,3 @@ public class MainPageTest {
         Assert.assertEquals("https://www.leconte.cz/#sluzby", mainPage.driver.getCurrentUrl());
     }
 }
-

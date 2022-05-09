@@ -1,0 +1,11 @@
+Tst,Tst@Tst.cz,+420,Hi!,Success,When message is correct Then sending is success
+,Tst@Tst.cz,+420,Hi!,Success,When message without name Then sending is success
+Tst,,+420,Hi!,Oops! Error,When message without email Then sending is not success
+Tst,Tst@Tst.cz,,Hi!,Success,When message without phone Then sending is success
+Tst,Tst@Tst.cz,+420,,Oops! Error,When message without text Then sending is not success
+Tst,tst,+420,Hi!,Oops! Error,When message has invalid email Then sending is not success
+Tst,tst@tst,+420,Hi!,Oops! Error,When message has invalid email Then sending is not success
+Hubert Blaine Wolfeschlegelsteinhausenbergerdorff Sr,Tst@Tst.cz,+420,Hi!,Success,When message has long name Then sending is success
+Tst,email.email.email.email@email.cz,+420,Hi!,Success,When message has long email Then sending is success
+Tst,Tst@Tst.cz,+420111222333444,Hi!,Success,When message has long phone Then sending is success
+Tst,Tst@Tst.cz,+4201112223334445,Hi!,Oops! Error,When message has too long phone Then sending is not success
