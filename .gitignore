@@ -29,6 +29,7 @@ dist/
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
 *.iml
+/leconte-ui-test.iml
 
 # Unit test reports
 TEST*.xml
@@ -51,4 +52,3 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
-
