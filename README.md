@@ -8,7 +8,7 @@ Autotest for https://www.leconte.cz/
 * selenium-java 4.1.4
 * JUnitParams 1.1.1
 
-## Bug report ##
+## Bug report for https://www.leconte.cz/##
 * Build Number: <!--  Last Published: Sun Nov 18 2018 17:44:28 GMT+0000 (UTC)  -->
 * Environment: OS Name Microsoft Windows 10 Pro Google Chrome 101.0.4951.54
 
