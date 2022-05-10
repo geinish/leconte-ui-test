@@ -25,7 +25,7 @@ Autotest for https://www.leconte.cz/
 	    <th>Reported On </th>  
 	</tr >
 	<tr >
-	    <td>**1**</td>
+	    <td>1</td>
 	    <td>UX</td>
 	    <td>Button Odeslat is available when mandatory fields are empty</td>
     	<td>https://www.leconte.cz/#form</td>
@@ -49,7 +49,7 @@ Autotest for https://www.leconte.cz/
 	    <td colspan="8">Button Odeslat is not available.</td>
 	</tr>
   <tr>
-	    <td>**2**</td>
+	    <td>2</td>
 	    <td>UX</td>
 	    <td>Missing hints for mandatory fields</td>
     	<td>https://www.leconte.cz/#form</td>
@@ -73,7 +73,7 @@ Autotest for https://www.leconte.cz/
 	    <td colspan="8">Hint: which fields are mandatory</td>
 	</tr>
     <tr>
-	    <td>**3**</td>
+	    <td>3</td>
 	    <td>UX</td>
 	    <td>Missing placeholder hints for e-mail, Telefon, Jméno a příjmení</td>
     	<td>https://www.leconte.cz/#form</td>
@@ -97,7 +97,7 @@ Autotest for https://www.leconte.cz/
 	    <td colspan="8">Placeholders for fields e-mail, Telefon, Jméno a příjmení</td>
 	</tr>
 	<tr>
-	    <td>**4**</td>
+	    <td>4</td>
 	    <td>Function</td>
 	    <td>User can sending message without Text zprávy</td>
     	<td>https://www.leconte.cz/#form</td>
@@ -122,7 +122,7 @@ Autotest for https://www.leconte.cz/
 	    <td colspan="8">User should see message about: “Text zprávy” Field must be filled out</td>
 	</tr>
 	<tr>
-	    <td>**5**</td>
+	    <td>5</td>
 	    <td>Function</td>
 	    <td>Validation for fields e-mail, Telefon is invalid</td>
     	<td>https://www.leconte.cz/#form</td>
