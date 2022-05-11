@@ -4,12 +4,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ConfProperties {
+public enum ConfProperties {
+    INSTANCE;
 
-    protected static FileInputStream fileInputStream;
-    protected static Properties PROPERTIES;
+    Properties PROPERTIES;
 
-    static {
+    private ConfProperties(){
+        FileInputStream fileInputStream = null;
         try {
             //file conf path
             fileInputStream = new FileInputStream("src/test/resources/conf.properties");
@@ -28,10 +29,11 @@ public class ConfProperties {
         }
     }
 
-    /**
-     * getting value properties
-     */
-    public static String getProperty(String key) {
-        return PROPERTIES.getProperty(key);
+    public static String getPropertyChromeDriver(){
+        return  ConfProperties.INSTANCE.PROPERTIES.getProperty("chrome_driver");
+    }
+
+    public static String getPropertyMainPageLink(){
+        return ConfProperties.INSTANCE.PROPERTIES.getProperty("main_page_link");
     }
 }
