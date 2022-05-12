@@ -14,7 +14,7 @@ public class MainPage {
         this.driver = driver; }
 
     /*
-     * Navigation locators
+     * Navigation button locators
      */
     @FindBy(xpath = "//*[@id=\"navbar\"]/div/nav/a[1]") //TODO name and text location
     private WebElement navigationSluzby;
@@ -24,7 +24,7 @@ public class MainPage {
     private WebElement navigationForm;
 
     /*
-     * sections locators
+     * Sections locators
      */
     @FindBy(xpath = "//*[@id=\"sluzby\"]/div[1]/h2[1]")
     private WebElement sectionSluzby;
