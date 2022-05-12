@@ -12,8 +12,6 @@ public class TestMainPageBase {
     public static cases.pages.MainPage mainPage;
 
     @Before
-    //driver
-    //implicit wait = 10 sec.
     public void setup() {
         System.setProperty("webdriver.chromedriver.driver", ConfProperties.getPropertyChromeDriver());
         WebDriver driver = new ChromeDriver();
