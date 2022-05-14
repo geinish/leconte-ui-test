@@ -9,7 +9,7 @@ public enum ConfProperties {
 
     Properties PROPERTIES;
 
-    private ConfProperties(){
+    private ConfProperties() {
         FileInputStream fileInputStream = null;
         try {
             //file conf path
@@ -29,11 +29,11 @@ public enum ConfProperties {
         }
     }
 
-    public static String getPropertyChromeDriver(){
-        return  ConfProperties.INSTANCE.PROPERTIES.getProperty("chrome_driver");
+    public static String getPropertyChromeDriver() {
+        return ConfProperties.INSTANCE.PROPERTIES.getProperty("chrome_driver");
     }
 
-    public static String getPropertyMainPageLink(){
+    public static String getPropertyMainPageLink() {
         return ConfProperties.INSTANCE.PROPERTIES.getProperty("main_page_link");
     }
 }

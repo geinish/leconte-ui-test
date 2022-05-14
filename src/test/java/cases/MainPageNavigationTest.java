@@ -3,12 +3,12 @@ package cases;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MainPageNavigationTest extends TestMainPageBase{
+public class MainPageNavigationTest extends TestMainPageBase {
     @Test
     public void shouldBeSpolupraceNavigation() {
         mainPage.navigationSpolupraceClick();
         Assert.assertEquals("When User click SPOLUPRÁCE S NÁMI Then User see the section Spoluprace", "NÁBOR PRACOVNÍKŮ NEBYL NIKDY SNAZŠÍ", mainPage.getSectionSpolupraceText());
-        Assert.assertEquals("When User click SPOLUPRÁCE S NÁMI Then User redirected to #spoluprace","https://www.leconte.cz/#spoluprace", mainPage.driver.getCurrentUrl());
+        Assert.assertEquals("When User click SPOLUPRÁCE S NÁMI Then User redirected to #spoluprace", "https://www.leconte.cz/#spoluprace", mainPage.driver.getCurrentUrl());
     }
 
     @Test

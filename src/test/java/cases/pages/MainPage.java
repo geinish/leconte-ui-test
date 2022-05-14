@@ -11,7 +11,8 @@ public class MainPage {
 
     public MainPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
-        this.driver = driver; }
+        this.driver = driver;
+    }
 
     /*
      * Navigation button locators
